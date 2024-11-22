@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import { useState } from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,36 +14,34 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
+
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] ${isDarkMode ? "dark" : ""}`}
     >
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/profile-image.jpg" // Replace with your image
-          alt="Zhiyu Liao"
-          width={180}
-          height={180}
-          priority
-        />
-        <h1 className="text-2xl font-bold">Zhiyu Liao</h1>
-        <p className="text-center sm:text-left">
+        <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-lg">
+          <Image
+            className="object-cover"
+            src="/profile-image.jpg" // Replace with your image
+            alt="Zhiyu Liao"
+            layout="fill"
+            priority
+          />
+        </div>
+
+        <h1 className="text-3xl font-bold text-center sm:text-left text-primary-600 dark:text-primary-300 transition-colors">Zhiyu Liao</h1>
+        <p className="text-center sm:text-left text-lg text-secondary-500 dark:text-secondary-400">
           Computer Science student at Lasalle College, Montreal. Passionate about
           software development, mobile, and web technologies.
         </p>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            <strong>Technical Skills:</strong> C#, Java, Python, JavaScript, HTML, CSS, SQL.
-          </li>
-          <li>
-            <strong>Languages:</strong> English (Fluent), Chinese (Fluent), French (Intermediate).
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="flex justify-center sm:justify-start gap-6 mt-6">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="rounded-full border border-solid border-transparent bg-primary-500 text-white px-6 py-2 hover:bg-primary-700 transition-colors"
             href="https://github.com/zhiyu0617"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +49,7 @@ export default function Home() {
             View My GitHub
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-primary-500 text-primary-500 px-6 py-2 hover:bg-primary-100 transition-colors"
             href="/CV_Zhiyu_Liao.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,19 +59,21 @@ export default function Home() {
         </div>
       </main>
 
-      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h2 className="text-xl font-bold">Featured Projects</h2>
-        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-8">
-          <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold">Online Queueing System</h3>
-            <p className="text-sm">
+      <section className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-center sm:text-left">
+        <h2 className="text-2xl font-semibold text-primary-600 dark:text-primary-300">
+          Featured Projects
+        </h2>
+        <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:gap-8">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-all transform hover:scale-105">
+            <h3 className="text-lg font-semibold text-primary-500 dark:text-primary-300">Online Queueing System</h3>
+            <p className="text-sm text-secondary-600 dark:text-secondary-400">
               Developed a secure online queuing system using Python and MySQL.
               Features include real-time queuing status and encrypted data storage.
             </p>
           </div>
-          <div className="flex flex-col items-center">
-            <h3 className="text-lg font-semibold">Online Food Ordering System</h3>
-            <p className="text-sm">
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-all transform hover:scale-105">
+            <h3 className="text-lg font-semibold text-primary-500 dark:text-primary-300">Online Food Ordering System</h3>
+            <p className="text-sm text-secondary-600 dark:text-secondary-400">
               Built a food ordering system in Java, integrating a dynamic menu
               and payment via API. Stored data using Firebase.
             </p>
@@ -80,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center text-sm text-secondary-500 dark:text-secondary-400">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://linkedin.com/in/zhiyu-liao"
@@ -97,6 +98,12 @@ export default function Home() {
         >
           GitHub
         </a>
+        <button
+          className="text-primary-500 dark:text-primary-300 hover:text-primary-700 dark:hover:text-primary-500 transition-colors"
+          onClick={toggleDarkMode}
+        >
+          Toggle Dark Mode
+        </button>
       </footer>
     </div>
   );
