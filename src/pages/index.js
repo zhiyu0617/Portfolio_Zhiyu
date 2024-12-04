@@ -17,6 +17,7 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
     >
+      {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-gray-900 text-gray-100 shadow-md z-50">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
           <h1 className="text-xl font-bold">Zhiyu Liao&apos;s Portfolio</h1>
@@ -39,6 +40,7 @@ export default function Home() {
       </nav>
 
       <div className="pt-24">
+        {/* Profile Header */}
         <header className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <Image
@@ -64,6 +66,7 @@ export default function Home() {
           </div>
         </header>
 
+        {/* Professional Summary */}
         <section id="summary" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Professional Summary</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
@@ -76,6 +79,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Skills Section */}
         <section id="skills" className="px-8 sm:px-20 py-8 bg-gray-800 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold mb-6 text-blue-400">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,6 +112,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Education Section */}
         <section id="education" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -129,6 +134,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Projects Section */}
         <section id="projects" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -150,9 +156,28 @@ export default function Home() {
                 Developed a secure online queueing system with user authentication and real-time queuing status.
               </p>
             </div>
+            <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-blue-400">Online Food Ordering Software</h3>
+              <p className="text-gray-400 mt-2">
+                <strong>Technologies:</strong> Java, Firebase, API Integration
+              </p>
+              <p className="mt-2">
+                Developed an online food ordering software allowing users to order food, modify menus, and make payments.
+              </p>
+            </div>
+            <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-blue-400">Development of Team Websites</h3>
+              <p className="text-gray-400 mt-2">
+                <strong>Technologies:</strong> PHP
+              </p>
+              <p className="mt-2">
+                Developed a Team website to introduce the team, including background music, animated transitions, etc.
+              </p>
+            </div>
           </div>
         </section>
 
+        {/* Experience Section */}
         <section id="experience" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Experience</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
@@ -162,6 +187,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Languages Section */}
         <section id="languages" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Languages</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
