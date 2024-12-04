@@ -1,4 +1,4 @@
-import Image from 'next/image'; // Import the Image component from Next.js
+import Image from 'next/image'; 
 import localFont from "next/font/local";
 
 const geistSans = localFont({
@@ -19,7 +19,8 @@ export default function Home() {
     >
       <nav className="fixed top-0 left-0 w-full bg-gray-900 text-gray-100 shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
-          <h1 className="text-xl font-bold">Zhiyu Liao's Portfolio</h1>
+          {/* Escaped apostrophe */}
+          <h1 className="text-xl font-bold">Zhiyu Liao&apos;s Portfolio</h1> 
           <ul className="flex space-x-6">
             <li>
               <a href="#summary" className="hover:text-blue-400">Summary</a>
