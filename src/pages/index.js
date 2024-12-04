@@ -17,6 +17,7 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
     >
+      {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-gray-900 text-gray-100 shadow-md z-50">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
           <h1 className="text-xl font-bold">Zhiyu Liao&apos;s Portfolio</h1>
@@ -38,7 +39,9 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* Main Content */}
       <div className="pt-24">
+        {/* Profile Header */}
         <header className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <Image
@@ -47,7 +50,7 @@ export default function Home() {
               width={200}
               height={200}
               className="w-52 h-52 rounded-full border-4 border-gray-700 shadow-lg object-cover"
-          />
+            />
           </div>
           <h1 className="text-4xl font-bold mb-2">Zhiyu Liao</h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">Montreal, QC, Canada</p>
@@ -64,6 +67,7 @@ export default function Home() {
           </div>
         </header>
 
+        {/* Professional Summary */}
         <section id="summary" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Professional Summary</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
@@ -76,6 +80,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Skills Section */}
         <section id="skills" className="px-8 sm:px-20 py-8 bg-gray-800 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold mb-6 text-blue-400">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,6 +113,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Education Section */}
         <section id="education" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -129,6 +135,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Projects Section */}
         <section id="projects" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -153,6 +160,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Experience Section */}
         <section id="experience" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Experience</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
@@ -162,6 +170,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Languages Section */}
         <section id="languages" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Languages</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
