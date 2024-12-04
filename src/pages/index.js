@@ -71,7 +71,7 @@ export default function Home() {
               Enthusiastic Computer Science student with a strong foundation in software development, algorithms, and data structures.
               Proficient in multiple programming languages, including Python, Java, and C#. Possesses strong analytical skills,
               effective teamwork, and excellent communication abilities. Actively seeking opportunities to apply technical knowledge
-              and gain practical experiences in real-world projects.
+              and gain practical experience in real-world projects.
             </p>
           </div>
         </section>
