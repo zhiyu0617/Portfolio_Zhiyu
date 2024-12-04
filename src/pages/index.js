@@ -1,3 +1,4 @@
+import Image from 'next/image'; // Import the Image component from Next.js
 import localFont from "next/font/local";
 
 const geistSans = localFont({
@@ -52,9 +53,12 @@ export default function Home() {
       <div className="pt-20">
         <header className="text-center mb-12">
           <div className="flex justify-center mb-4">
-            <img
+            {/* Use the Next.js Image component */}
+            <Image
               src="/photo.jpg"
               alt="Zhiyu Liao"
+              width={200} // Set the width
+              height={200} // Set the height
               className="w-52 h-52 rounded-full border-4 border-gray-700 shadow-lg"
             />
           </div>
