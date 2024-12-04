@@ -16,7 +16,6 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
     >
-      {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-gray-900 text-gray-100 shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
           <h1 className="text-xl font-bold">Zhiyu Liao's Portfolio</h1>
@@ -40,7 +39,6 @@ export default function Home() {
               <a href="#languages" className="hover:text-blue-400">Languages</a>
             </li>
           </ul>
-          {/* Download CV Button */}
           <a
             href="/Zhiyu_Liao_CV.pdf"
             download="Zhiyu_Liao_CV.pdf"
@@ -51,10 +49,8 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Main Content */}
       <div className="pt-20">
         <header className="text-center mb-12">
-          {/* Portfolio Photo */}
           <div className="flex justify-center mb-4">
             <img
               src="/photo.jpg"
@@ -102,9 +98,7 @@ export default function Home() {
         </header>
       </div>
 
-      {/* Main Content */}
       <main className="pt-10 px-8 sm:px-20 space-y-6">
-        {/* Professional Summary */}
         <section id="summary" className="mt-4">
           <h2 className="text-3xl font-semibold mb-1 text-blue-400">Professional Summary</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
@@ -117,7 +111,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Technical Skills */}
         <section id="skills">
           <h2 className="text-3xl font-semibold mb-4">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -150,7 +143,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Education */}
         <section id="education">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -172,7 +164,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects */}
         <section id="projects">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Projects</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
@@ -195,7 +186,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Experience */}
         <section id="experience">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Experience</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -209,7 +199,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Languages */}
         <section id="languages">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Languages</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
