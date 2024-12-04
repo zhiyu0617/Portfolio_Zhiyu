@@ -147,7 +147,7 @@ export default function Home() {
                 <strong>Technologies:</strong> Python, MySQL
               </p>
               <p className="mt-2">
-                Developed a secure online queueing system with user authentication and real-time queuing status.
+                 Developed a secure online queueing system with user authentication and real-time queuing status.
               </p>
             </div>
           </div>
