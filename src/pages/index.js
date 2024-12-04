@@ -17,7 +17,6 @@ export default function Home() {
     <div
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-100`}
     >
-      {/* Navigation Bar */}
       <nav className="fixed top-0 left-0 w-full bg-gray-900 text-gray-100 shadow-md z-50">
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
           <h1 className="text-xl font-bold">Zhiyu Liao&apos;s Portfolio</h1>
@@ -39,9 +38,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Main Content */}
       <div className="pt-24">
-        {/* Profile Header */}
         <header className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <Image
@@ -49,8 +46,8 @@ export default function Home() {
               alt="Zhiyu Liao"
               width={200}
               height={200}
-              className="w-52 h-52 rounded-full border-4 border-gray-700 shadow-lg"
-            />
+              className="w-52 h-52 rounded-full border-4 border-gray-700 shadow-lg object-cover"
+          />
           </div>
           <h1 className="text-4xl font-bold mb-2">Zhiyu Liao</h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">Montreal, QC, Canada</p>
@@ -67,7 +64,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Professional Summary */}
         <section id="summary" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Professional Summary</h2>
           <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
@@ -80,12 +76,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Skills Section */}
         <section id="skills" className="px-8 sm:px-20 py-8 bg-gray-800 rounded-lg shadow-lg">
           <h2 className="text-3xl font-semibold mb-6 text-blue-400">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 bg-gray-700 text-gray-100 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">Programming Languages</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-4">Programming Languages</h3>
               <ul className="list-disc pl-5">
                 <li>C#</li>
                 <li>Java</li>
@@ -95,7 +90,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="p-6 bg-gray-700 text-gray-100 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">Web Technologies</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-4">Web Technologies</h3>
               <ul className="list-disc pl-5">
                 <li>HTML, CSS, PHP</li>
                 <li>JavaScript</li>
@@ -103,7 +98,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="p-6 bg-gray-700 text-gray-100 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-purple-400 mb-4">Database Technologies</h3>
+              <h3 className="text-xl font-bold text-blue-400 mb-4">Database Technologies</h3>
               <ul className="list-disc pl-5">
                 <li>MySQL</li>
                 <li>SQLite</li>
@@ -113,12 +108,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Education Section */}
         <section id="education" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Education</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-purple-400">DEC in Computer Science</h3>
+              <h3 className="text-xl font-bold text-blue-400">DEC in Computer Science</h3>
               <p>Lasalle College, Montreal, Canada (Jan 2023 - May 2025)</p>
               <p className="text-gray-400 mt-2">
                 Relevant Coursework: Android Mobile Development, iOS Mobile Development, Data Structures, Operating Systems and Network,
@@ -126,7 +120,7 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-purple-400">Bachelor of Science in Life Science</h3>
+              <h3 className="text-xl font-bold text-blue-400">Bachelor of Science in Life Science</h3>
               <p>Sichuan Agricultural College, Chengdu, China (Sept 2018 – June 2022)</p>
               <p className="text-gray-400 mt-2">
                 Relevant Coursework: Genetics, Organisms, Evolution and Phylogeny, Microbiology, Biochemistry, Statistical Methods
@@ -135,12 +129,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-purple-400">Property Rental Management System</h3>
+              <h3 className="text-xl font-bold text-blue-400">Property Rental Management System</h3>
               <p className="text-gray-400 mt-2">
                 <strong>Technologies:</strong> MySQL, ASP.NET Core Web App (MVC)
               </p>
@@ -149,7 +142,7 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-purple-400">Online Queueing System</h3>
+              <h3 className="text-xl font-bold text-blue-400">Online Queueing System</h3>
               <p className="text-gray-400 mt-2">
                 <strong>Technologies:</strong> Python, MySQL
               </p>
@@ -160,17 +153,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Experience Section */}
         <section id="experience" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Experience</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-purple-400">Research Assistant Intern</h3>
+            <h3 className="text-xl font-bold text-blue-400">Research Assistant Intern</h3>
             <p>TechLEX GROUP, Sichuan, China (May 2021 – June 2021)</p>
             <p className="text-gray-400 mt-2">Responsible for experimental design, data collection, and analysis.</p>
           </div>
         </section>
 
-        {/* Languages Section */}
         <section id="languages" className="px-8 sm:px-20 py-8">
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">Languages</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
