@@ -147,14 +147,14 @@ export default function Home() {
                 <strong>Technologies:</strong> Python, MySQL
               </p>
               <p className="mt-2">
-                 Developed a secure online queueing system with user authentication and real-time queuing status.
+                Developed a secure online queueing system with user authentication and real-time queuing status.
               </p>
             </div>
           </div>
         </section>
 
         <section id="experience" className="px-8 sm:px-20 py-8">
-          <h2 className="text-3xl font-semibold mb-4 text-blue-400">Working Experience</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-blue-400">Experience</h2>
           <div className="p-6 bg-gray-700 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold text-blue-400">Research Assistant Intern</h3>
             <p>TechLEX GROUP, Sichuan, China (May 2021 – June 2021)</p>
@@ -172,7 +172,7 @@ export default function Home() {
             </ul>
           </div>
         </section>
-      </main>
-  </div>
+      </div>
+    </div>
   );
 }
